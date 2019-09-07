@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Correct page</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .box {
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            display: inline-block;
+            margin-left: 20px, auto;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .box{
+            padding:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Welcome to the Great Number Game!</h2>
+    <p>I am thinking of a number between 1 and 100</p>
+    <p>Take a guess!</p>
+    <p>Submitted Times: {{times_on_template}}</p>
+    <div class="box">
+        <p>{{true_num_on_template}} was the number!</p>
+        <form method="post" action="/2">
+            <button class="btn btn-secondary" type="submit">Play again!</button>
+        </form>
+    </div>
+    <form action="/3" method="post">
+        Winner name: <input type="text" name="winner">
+        <button class="btn btn-success" type="submit">Sumbit</button>
+    </form>
+
+</body>
+
+</html>

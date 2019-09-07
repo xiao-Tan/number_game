@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Great Number Game</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        button{
+            margin-top:20px;
+        }
+        a{
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Welcome to the Great Number Game!</h2>
+    <p>I am thinking of a number between 1 and 100</p>
+    <p>Take a guess!</p>
+    <form method="post" action="/1">
+        Your number:
+        <input type="text" name="number"></br>
+        <button class="btn btn-danger" type="submit">Submit</button>
+    </form>
+    <a class="btn btn-primary" href="/winner" role="button">Winner List</a>
+</body>
+
+</html>
